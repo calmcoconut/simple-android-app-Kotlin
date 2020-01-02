@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quanity"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="increment"
+        />
+
+    <TextView
+        android:id="@+id/quantity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/minus_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="-"
+        android:layout_marginLeft="16dp"
+        android:onClick="decrement"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+    />
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_margin="16dp"
+        android:onClick="submitOrder"
+        />
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:text="This has been created by Alex. Find the full tutorial made by Google on Udacity"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here: https://www.udacity.com/course/android-basics-user-input--ud836"
+        android:gravity="bottom|center"
+        android:autoLink="web"
+        />
+
+
+</LinearLayout>
